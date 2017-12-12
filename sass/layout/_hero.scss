@@ -1,0 +1,21 @@
+
+.hero {
+  align-items: center;
+  background: url('../img/presto-hero.jpg') 30% 50%/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: flex-end;
+  width: 100%;
+  padding: $hero-padding;
+}
+
+.hero h2 {
+  color: silver;
+  @include nike-font;
+}
+
+.hero p {
+  color: lightgrey;
+  margin-bottom: $hero-bottom-margin;
+}
