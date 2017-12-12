@@ -1,0 +1,13 @@
+@import
+  "abstracts/_mixins",
+  "abstracts/_variables";
+
+@import
+  "base/reset";
+
+@import
+  "layout/header",
+  "layout/hero",
+  "layout/featured-products",
+  "layout/big-feature",
+  "layout/categories";

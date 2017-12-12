@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  height: $header-height;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $header-padding;
+
+  .logo {
+    height: 30%;
+  }
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+  li {
+    display: inline;
+    font-size: 1.25em;
+    margin-left: $header-icon-left-margin;
+  }
+}
