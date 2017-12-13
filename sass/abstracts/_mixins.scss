@@ -2,3 +2,33 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 3em;
 }
+
+@mixin product-box-flex-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 400px;
+}
+
+@mixin big-feature-text {
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+@mixin bg-img($url) {
+  background: url('../img/#{$url}') center/cover no-repeat;
+}
+
+@mixin media($size) {
+  @if $size == sm {
+    @media #{$breakpoint-sm} { @content; }
+  } @else if $size == md {
+    @media #{$breakpoint-md} { @content; }
+  } @else if $size == lg {
+    @media #{$breakpoint-lg} { @content; }
+  } @else if $size == xl {
+    @media #{$breakpoint-xl} { @content; }
+  }
+}

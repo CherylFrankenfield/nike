@@ -1,0 +1,13 @@
+.big-feature {
+  background: url('../img/snowcap.jpg') 30% 50%/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.big-feature p {
+  @include big-feature-text;
+}

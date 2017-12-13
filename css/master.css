@@ -93,32 +93,53 @@ header {
   display: flex;
   width: 100%;
   flex-direction: column;
+  justify-content: center;
   padding: 10px; }
+  .featured-products > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 400px; }
+    .featured-products > div h4, .featured-products > div p {
+      align-self: center;
+      font-family: sans-serif;
+      padding: 4px; }
+  @media screen and (min-width: 1200px) {
+    .featured-products {
+      font-family: verdana; } }
 
 .featured-products h3 {
   align-self: center;
   font-size: 1.5em;
   padding-bottom: 10px;
-  color: grey; }
+  color: grey;
+  font-family: sans-serif; }
 
 .product-one {
-  background: url("../img/red-shoes.jpg") center/cover no-repeat;
-  width: 100%;
-  height: 300px; }
+  background: url("../img/red-shoes.jpg") center/cover no-repeat; }
 
 .product-two {
-  background: url("../img/gold-cortez.jpg") 50% 80%/cover no-repeat;
-  width: 100%;
-  height: 300px; }
+  background: url("../img/gold-cortez.jpg") center/cover no-repeat; }
 
 .product-three {
-  background: url("../img/pink-shoes.jpg") center/cover no-repeat;
-  width: 100%;
-  height: 300px; }
+  background: url("../img/pink-shoes.jpg") center/cover no-repeat; }
 
 .product-four {
-  background: url("../img/sock-shoe.jpg") center/cover no-repeat;
+  background: url("../img/sock-shoe.jpg") center/cover no-repeat; }
+
+.big-feature {
+  background: url("../img/snowcap.jpg") 30% 50%/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
   width: 100%;
-  height: 300px; }
+  margin-top: 20px; }
+
+.big-feature p {
+  align-items: center;
+  color: white;
+  font-family: sans-serif; }
 
 /*# sourceMappingURL=master.css.map */

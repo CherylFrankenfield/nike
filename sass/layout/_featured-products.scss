@@ -2,7 +2,25 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  justify-content: center;
   padding: $featured-products-padding;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 400px;
+
+    h4, p {
+      align-self: center;
+      font-family: sans-serif;
+      padding: $product-padding;
+    }
+  }
+
+  @include media(xl) {
+    font-family: verdana;
+  }
 }
 
 .featured-products h3 {
@@ -10,28 +28,21 @@
   font-size: 1.5em;
   padding-bottom: 10px;
   color: grey;
+  font-family: sans-serif;
 }
 
 .product-one {
-  background: url('../img/red-shoes.jpg') center/cover no-repeat;
-  width: 100%;
-  height: 300px;
+  @include bg-img('red-shoes.jpg');
 }
 
 .product-two {
-  background: url('../img/gold-cortez.jpg') 50% 80%/cover no-repeat;
-  width: 100%;
-  height: 300px;
+  @include bg-img('gold-cortez.jpg');
 }
 
 .product-three {
   background: url('../img/pink-shoes.jpg') center/cover no-repeat;
-  width: 100%;
-  height: 300px;
 }
 
 .product-four {
   background: url('../img/sock-shoe.jpg') center/cover no-repeat;
-  width: 100%;
-  height: 300px;
 }
